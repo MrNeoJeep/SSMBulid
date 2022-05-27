@@ -74,6 +74,13 @@
             <version>5.2.8.RELEASE</version>
         </dependency>
 
+        <!--其他插件-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
+
     </dependencies>
 
     <!--静态资源导出-->
