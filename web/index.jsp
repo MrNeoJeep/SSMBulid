@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>首页</title>
+    <style>
+
+    </style>
   </head>
   <body>
   <a href="/book/allBook" style="text-align: center">进入书籍展示页面</a>
