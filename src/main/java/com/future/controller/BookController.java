@@ -54,10 +54,19 @@ public class BookController {
     }
 
     //删除---restful风格
-    @RequestMapping("deleteBook/{bookId}")
+    @RequestMapping("/deleteBook/{bookId}")
     public String deleteBook(@PathVariable("bookId") int id){
         bookService.deleteBookById(id);
         return "redirect:/book/allBook";
+    }
+
+    //查询
+    @RequestMapping("/queryBook")
+    public String queryBook(String queryBookName,Model model){
+        List<Books> books = bookService.queryBookByName(queryBookName);
+        System.out.println("book == >" +books.toString());
+        model.addAttribute("list",books);
+        return "allBook";
     }
 
 

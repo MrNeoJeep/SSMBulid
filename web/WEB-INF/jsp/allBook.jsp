@@ -19,12 +19,26 @@
                 </h1>
             </div>
         </div>
-        <%--增加按钮--%>
+
         <div class="row">
+            <%--增加按钮--%>
             <div class="col-md-4">
                 <a class="btn btn-primary" href="/book/toAddBook">新增书籍</a>
+                <a class="btn btn-primary" href="/book/allBook">显示全部书籍</a>
+
+            </div>
+            <%--搜索--%>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <form action="/book/queryBook" method="post" style="float: right" class="form-inline">
+                    <input type="text" name="queryBookName" class="form-control" placeholder="请输入书籍名称" required>
+                    <input type="submit" value="查询" class="btn btn-primary">
+                </form>
             </div>
         </div>
+
+
+
 
     </div>
     <div class="row clearfix">
